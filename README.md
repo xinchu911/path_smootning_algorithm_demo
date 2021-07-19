@@ -50,7 +50,7 @@ for (std::uint32_t i = 0; i <= num_spline; ++i) {
 
 刚开始不解Apollo的这种分段做法,先从简单的设定开始.我决定在自车坐标系坐标轴等距采样,即沿着自车行进方(+y轴)采样,得点列($x_{ref_i},y_{ref_i}$)
 此方法的问题在于,一个是不准,二个是在U-turn等场景下可能会出现采样多值的问题.可以考虑通过Dubin曲线筛选路径较短的那个值来解决.
-![自车坐标系coordination_setting.png)
+![自车坐标系](./pic/coordination_setting.png)
 ## 1.数学模型建立
 
 ### 1.QP标准形式
