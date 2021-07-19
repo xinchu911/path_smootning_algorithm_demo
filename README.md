@@ -1,6 +1,4 @@
 # path planning-5次Spline样条曲线光滑算法Demo
-[TOC]
-
 ## 基础知识
 
 ### [非参数化曲线缺点](https://blog.csdn.net/Jurbo/article/details/75046766)
@@ -357,4 +355,6 @@ $$ \int _{y_0}^{y_i} \big ( \sqrt{1+{(x'(y))}^2} \big ) dy  = \int _{y_0}^{y_i} 
 ## 4.总结
 本文尝试复现了Apollo的算法,即对三次多项式曲线进行分段采样后,进行5次多项式的样条曲线进行拟合的形式光滑原曲线,实现了各点0-3阶导数连续,并且需要操作量最小的优化.优化算法基于二次规划,并对位置约束的非线性约束采取了近似的线性近似的方法.
 
-注:本文参考的文章都嵌在了文中的链接内.
+注:
+1. 本文参考的文章都嵌在了文中的链接内.
+2. github不支持latex公式显示,请用chrome[插件](https://chrome.google.com/webstore/detail/tex-all-the-things/cbimabofgmfdkicghcadidpemeenbffn)帮助显示公式.
